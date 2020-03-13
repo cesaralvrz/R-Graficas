@@ -40,7 +40,7 @@ plot(mtcars$wt, mtcars$mpg)
 ```
 
 
-![](img/graficas/grafico2.png)
+![](graficas/grafico2.png)
 
 
 
@@ -54,7 +54,7 @@ plot(AirPassengers)
 ```
 
 
-![](img/graficas/grafico3.png)
+![](graficas/grafico3.png)
 
 
 
@@ -72,7 +72,7 @@ plot(v)
 
 
 
-![](img/graficas/grafico4.png)
+![](graficas/grafico4.png)
 
 
 
@@ -86,7 +86,7 @@ plot(f)
 ```
 
 
-![](img/graficas/grafico5.png)
+![](graficas/grafico5.png)
 
 
 
@@ -101,7 +101,7 @@ plot(cylfact, mtcars$mpg)
 ```
 
 
-![](img/graficas/grafico6.png)
+![](graficas/grafico6.png)
 
 
 
@@ -116,7 +116,7 @@ plot(trees)
 ```
 
 
-![](img/graficas/grafico7.png)
+![](graficas/grafico7.png)
 
 
 
@@ -127,7 +127,7 @@ plot(trees)
 plot(~mtcars$mpg + mtcars$cyl + mtcars$wt)
 ```
 
-![](img/graficas/grafico8.png)
+![](graficas/grafico8.png)
 
 
 
@@ -184,7 +184,7 @@ San Francisco        Denver      Hartford    Wilmington
 ```
 
 
-![](img/graficas/grafico9.png) 
+![](graficas/grafico9.png) 
 
 
 
@@ -201,7 +201,7 @@ San Francisco        Denver      Hartford    Wilmington
 ```
 
 
-![](img/graficas/grafico10.png)
+![](graficas/grafico10.png)
 
 
 
@@ -216,7 +216,7 @@ San Francisco        Denver      Hartford    Wilmington
 > pie(pr)
 ```
 
-![](img/graficas/grafico11.png)
+![](graficas/grafico11.png)
 
 
 
@@ -230,7 +230,7 @@ pairs(pressure)
 ```
 
 
-![](img/graficas/grafico12.png)
+![](graficas/grafico12.png)
 
 
 
@@ -241,7 +241,7 @@ pairs(pressure)
 coplot(mtcars$mpg ~ mtcars$wt | factor(mtcars$cyl))
 ```
 
-![](img/graficas/grafico13.png)
+![](graficas/grafico13.png)
 
 
 
@@ -252,7 +252,7 @@ coplot(mtcars$mpg ~ mtcars$wt | factor(mtcars$cyl))
 hist(discoveries)
 ```
 
-![](img/graficas/grafico14.png)
+![](graficas/grafico14.png)
 
 
 
@@ -276,9 +276,9 @@ las funciones gráficas de nivel bajo que son aquellas que modifican los gráfic
 > plot(nilo, type = "l")
 ```
 
-![](img/graficas/grafico15.png)
+![](graficas/grafico15.png)
 
-![](img/graficas/grafico16.png)
+![](graficas/grafico16.png)
 
 * *type = “n”* y *text(x,y,t)*. Con type = “n”, pintaremos la estructura del gráficos pero sin puntos ni líneas. Luego, añadimos la función text(x,y,t) para escribir en las coordenadas x,y el valor t.
 
@@ -292,7 +292,7 @@ las funciones gráficas de nivel bajo que son aquellas que modifican los gráfic
 ```
 
 
-![](img/graficas/grafico17.png)
+![](graficas/grafico17.png)
 
 * * *main(x)* y *sub(x)*.La función main establecerá un título para el gráfico, mientras que la función sub establece un subtitulo. Ambas son argumentos de las funciones de alto nivel.
 * *title(main, sub)*. Esta función tiene el mismo objetivo que los dos argumentos anteriores, solo que se usan como una función independiente.
@@ -306,7 +306,7 @@ las funciones gráficas de nivel bajo que son aquellas que modifican los gráfic
 
 
 
-![](img/graficas/grafico18.png)
+![](graficas/grafico18.png)
 
 
 
@@ -324,7 +324,7 @@ legend(1978, 4500, legend = c("ldeaths", "mdeaths"), col = c("blue", "red"), lty
 ```
 
 
-![](img/graficas/grafico19.png)
+![](graficas/grafico19.png)
 
 
 
@@ -375,7 +375,7 @@ legend(1978, 4500, legend = c("ldeaths", "mdeaths"), col = c("blue", "red"), lty
 
 
 
-![](img/graficas/grafico20.png)
+![](graficas/grafico20.png)
 
 
 
@@ -404,7 +404,7 @@ legend(1978, 5000, legend = c("mdeaths","ldeaths","fdeaths"),
 
 
 
-![](img/graficas/grafico21.png)
+![](graficas/grafico21.png)
 
 
 
@@ -425,7 +425,7 @@ text(c(1:length(prmenor)), prmenor, names(prmenor), font = 3, col = "red")
 text(c(length(prmenor)+1:length(prmayor)), prmayor, names(prmayor), font = 2, col = "blue")
 ```
 
-![](img/graficas/grafico22.png)
+![](graficas/grafico22.png)
 
 
 
@@ -435,7 +435,7 @@ Para empezar, debemos comenzar instalando la librería desde RStudio en la pesta
 Existen numerosas librerías que nos permiten crear distintos tipos de gráficos, pero nos centraremos en una:  plotly.
 
 
-![](img/graficas/ss.png)
+![](graficas/ss.png)
 
 
 Ahora, vamos a ver distintos tipos de gráficos.
@@ -447,7 +447,7 @@ Ahora, vamos a ver distintos tipos de gráficos.
 > plot_ly(mtcars, x = ~wt, y = ~hp, z = ~qsec) %>% add_markers()
 ```
 
-![](img/graficas/grafico23.png)
+![](graficas/grafico23.png)
 
 
 
@@ -463,7 +463,7 @@ mtcars$am <- as.factor(mtcars$am)
 plot_ly(mtcars, x = ~wt, y = ~hp, z = ~qsec, color = ~am, colors = c("red","blue")) %>% add_markers()
 ```
 
-![](img/graficas/grafico24.png)
+![](graficas/grafico24.png)
 
 
 
@@ -486,7 +486,7 @@ plot_ly(mtcars, x = ~wt, y = ~mpg, z = ~qsec, color = ~am,
 ```
 
 
-![](img/graficas/grafico25.png)
+![](graficas/grafico25.png)
 
 
 
@@ -498,7 +498,7 @@ plot_ly(z = volcano) %>% add_surface()
 
 
 
-![](img/graficas/grafico26.png)
+![](graficas/grafico26.png)
 
 
 
@@ -510,7 +510,7 @@ plot_ly(mtcars, x = ~cyl, y = ~mpg, color = ~am, colors = c("blue", "red")) %>% 
 
 
 
-![](img/graficas/grafico27.png)
+![](graficas/grafico27.png)
 
 
 
@@ -521,7 +521,7 @@ plot_ly(z = volcano) %>% add_heatmap()
 ```
 
 
-![](img/graficas/grafico28.png)
+![](graficas/grafico28.png)
 
 
 
