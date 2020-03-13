@@ -7,7 +7,7 @@ En R, los tipos de acciones existentes para trabaja con gráficas se dividen en 
 	* Gráfico de dispersión
 	* Gráfico de puntos
 	* Diagrama de cajas
-	* …
+	
 * *Bajo nivel*: Son funciones que añaden nueva información a una gráfica ya existente, como puede ser una nueva línea, punto, etc.
 * *Interactivas*: Son funciones que nos permiten interactuar con los gráficos haciendo uso de un apuntador, como puede ser un ratón.
 Para realizar nuestra primera gráfica en R vamos a usar la función *plot* (la cual veremos en profundidad más adelante) y el conjunto de datos *pressure*. Este dataset muestra la presión del vapor de mercurio en función de su temperatura.
