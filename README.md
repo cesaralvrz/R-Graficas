@@ -22,7 +22,7 @@ Para realizar nuestra primera gráfica en R vamos a usar la función *plot* (la 
 > title("Temperatura vs Presion")
 ```
 
-*GRÁFICO1*
+![](graficas/grafico1.png)
 
 ## Función Plot
 
