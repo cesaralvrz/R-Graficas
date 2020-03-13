@@ -23,9 +23,7 @@ Para realizar nuestra primera gráfica en R vamos a usar la función *plot* (la 
 ```
 
 
-<p align="center">
-  <img width="531" height="745" src="graficas/grafico1.png">
-</p>
+![](img/graficas/grafico1.png)
 
 
 
@@ -41,7 +39,10 @@ str(mtcars)
 plot(mtcars$wt, mtcars$mpg)
 ```
 
-*GRÁFICO2*
+
+![](img/graficas/grafico2.png)
+
+
 
 * *plot(x)*. Siendo /x/ una serie temporal, esta acción genera un gráfico de lineas temporal. 
 
@@ -52,7 +53,10 @@ AirPassengers
 plot(AirPassengers)
 ```
 
-*GRÁFICO3*
+
+![](img/graficas/grafico3.png)
+
+
 
 * *plot(x)*. Si x es un vector formado por números complejos, esta función genera un gráfico de puntos de la parte imaginaria sobre la parte real de los elementos.
 
@@ -66,7 +70,11 @@ v = c(a,b,c,d,e)
 plot(v)
 ```
 
-*GRÁFICO4*
+
+
+![](img/graficas/grafico4.png)
+
+
 
 * *plot(f)*. Siendo /f/ un factor, genera un diagrama de barras de f.
 
@@ -77,7 +85,10 @@ f = factor(discoveries)
 plot(f)
 ```
 
-*GRÁFICO5*
+
+![](img/graficas/grafico5.png)
+
+
 
 * *plot(f, y)*. Siendo /f/ un factor e /y/ un vector numérico, genera un diagrama de cajas de y para nivel de f.
 
@@ -89,7 +100,11 @@ mtcars$mpg
 plot(cylfact, mtcars$mpg)
 ```
 
-*GRÁFICO6*
+
+![](img/graficas/grafico6.png)
+
+
+
 
 * *plot(df)*. Siendo df un data frame o hoja de datos, esta función genera gráficos de todas las parejas de variables del data frame.
 
@@ -100,7 +115,11 @@ trees
 plot(trees)
 ```
 
-*GRÁFICO7*
+
+![](img/graficas/grafico7.png)
+
+
+
 
 * *plot(~ expr1 + expr2 + …)*. Siendo expr variables de un data frame, esta expresión genera parejas de gráficas, de manera similar a a la expresión anterior.
 
@@ -108,7 +127,10 @@ plot(trees)
 plot(~mtcars$mpg + mtcars$cyl + mtcars$wt)
 ```
 
-*GRÁFICO8*
+![](img/graficas/grafico8.png)
+
+
+
 
 ## Otros tipos de Gráficas
 Además de la función *plot*, existen otras maneras de generar gráficas en R. Veamos algunas funciones:
@@ -161,7 +183,11 @@ San Francisco        Denver      Hartford    Wilmington
 > dotchart(precip[1:10])
 ```
 
-*GRÁFICO9* 
+
+![](img/graficas/grafico9.png) 
+
+
+
 
 * *barplot(x)*. Genera un gráfico de barrras donde x es una matriz o un vector.
 
@@ -174,7 +200,11 @@ San Francisco        Denver      Hartford    Wilmington
 > barplot(carb)
 ```
 
-*GRÁFICO10*
+
+![](img/graficas/grafico10.png)
+
+
+
 
 * *pie(x)*. Genera un gráfico de tarta dónde x es un vector.
 
@@ -186,7 +216,10 @@ San Francisco        Denver      Hartford    Wilmington
 > pie(pr)
 ```
 
-*GRÁFICO11*
+![](img/graficas/grafico11.png)
+
+
+
 
 * *pairs(x)*. Siendo x una matriz o una hoja de datos, esta función genera pares de gráficos entre sus variables.
 
@@ -196,7 +229,11 @@ str(pressure)
 pairs(pressure)
 ```
 
-*GRÁFICO12*
+
+![](img/graficas/grafico12.png)
+
+
+
 
 * *coplot(a ~ b | c)*. Siendo a y b vectores numéricos y c un vector numérico o un factor, esta función genera pares de gráficos de a sobre b para cada valor de c.
 
@@ -204,7 +241,10 @@ pairs(pressure)
 coplot(mtcars$mpg ~ mtcars$wt | factor(mtcars$cyl))
 ```
 
-*GRÁFICO13*
+![](img/graficas/grafico13.png)
+
+
+
 
 * *hist(x)*. Siendo x un vector numérico, esta función genera un histograma de la frecuencia de los valores de x. Esta función puede recibir varios parámetros como *nclass = n* para mostrar únicamente n clases, o *labels = TRUE* para mostrar el número de ocurrencias, o *breaks = v*, donde v será un vector que indica los cortes a tener en cuenta.
 
@@ -212,7 +252,10 @@ coplot(mtcars$mpg ~ mtcars$wt | factor(mtcars$cyl))
 hist(discoveries)
 ```
 
-*GRÁFICO14*
+![](img/graficas/grafico14.png)
+
+
+
 
 ## Funciones Gráficas de Bajo Nivel
 las funciones gráficas de nivel bajo que son aquellas que modifican los gráficos, añadiendo texto, ejes, etiquetas, etc.
@@ -233,8 +276,9 @@ las funciones gráficas de nivel bajo que son aquellas que modifican los gráfic
 > plot(nilo, type = "l")
 ```
 
-*GRÁFICO15*
-*GRÁFICO16*
+![](img/graficas/grafico15.png)
+
+![](img/graficas/grafico16.png)
 
 * *type = “n”* y *text(x,y,t)*. Con type = “n”, pintaremos la estructura del gráficos pero sin puntos ni líneas. Luego, añadimos la función text(x,y,t) para escribir en las coordenadas x,y el valor t.
 
@@ -247,7 +291,8 @@ las funciones gráficas de nivel bajo que son aquellas que modifican los gráfic
 > text(c(1:5), pr, names(pr))
 ```
 
-*GRÁFICO17*
+
+![](img/graficas/grafico17.png)
 
 * * *main(x)* y *sub(x)*.La función main establecerá un título para el gráfico, mientras que la función sub establece un subtitulo. Ambas son argumentos de las funciones de alto nivel.
 * *title(main, sub)*. Esta función tiene el mismo objetivo que los dos argumentos anteriores, solo que se usan como una función independiente.
@@ -259,7 +304,13 @@ las funciones gráficas de nivel bajo que son aquellas que modifican los gráfic
 > axis(2, c(10,20,30,40,50,60,70))
 ```
 
-*GRÁFICO18*
+
+
+![](img/graficas/grafico18.png)
+
+
+
+
 
 * * *legend(x,y,text)*. También podemos crear una leyenda. A la hora de crear la leyenda tendremos en cuenta dónde queremos situarla (valores x e y), que texto queremos que aparezca y si deseamos algunos colores.
 
@@ -272,7 +323,11 @@ lines(mdeaths, col = "red")
 legend(1978, 4500, legend = c("ldeaths", "mdeaths"), col = c("blue", "red"), lty = 1:1)
 ```
 
-*GRÁFICO19*
+
+![](img/graficas/grafico19.png)
+
+
+
 
 ### Otros elementos gráficos
 
@@ -318,7 +373,12 @@ legend(1978, 4500, legend = c("ldeaths", "mdeaths"), col = c("blue", "red"), lty
 > title("Gráficos de Barras", "Número de coches que tienen n cilindros")
 ```
 
-*GRÁFICO20*
+
+
+![](img/graficas/grafico20.png)
+
+
+
 
 2. Haciendo uso de los datasets /mdeaths/, /ldeaths/ y /fdeaths/, realiza un gráfico donde:
 	* Los 3 conjuntos de datos deben quedar representados como un gráfico de líneas.
@@ -342,7 +402,12 @@ legend(1978, 5000, legend = c("mdeaths","ldeaths","fdeaths"),
        col = c("red","blue","green"), lty = c(1,2,2), lwd = c(1,1,3))
 ```
 
-*GRÁFICO21*
+
+
+![](img/graficas/grafico21.png)
+
+
+
 
 3. Haciendo uso del dataset /precip/:
 	* Filtra el dataset quedándote únicamente con los primeros 5 valores.
@@ -360,14 +425,18 @@ text(c(1:length(prmenor)), prmenor, names(prmenor), font = 3, col = "red")
 text(c(length(prmenor)+1:length(prmayor)), prmayor, names(prmayor), font = 2, col = "blue")
 ```
 
-*GRÁFICO22*
+![](img/graficas/grafico22.png)
+
+
 
 ## Gráficos en 3D y Gráficos Interactivos
 Para empezar, debemos comenzar instalando la librería desde RStudio en la pestaña /packages/. Una vez instalada, debemos importarla con la función *library*.
 
 Existen numerosas librerías que nos permiten crear distintos tipos de gráficos, pero nos centraremos en una:  plotly.
 
-*SS*
+
+![](img/graficas/ss.png)
+
 
 Ahora, vamos a ver distintos tipos de gráficos.
 
@@ -378,8 +447,9 @@ Ahora, vamos a ver distintos tipos de gráficos.
 > plot_ly(mtcars, x = ~wt, y = ~hp, z = ~qsec) %>% add_markers()
 ```
 
+![](img/graficas/grafico23.png)
 
-*GRÁFICO23*
+
 
 La función *add_markers()* añade los puntos al gráfico.
 Además, podemos dividir los puntos en colores en función de otra variable del dataset.
@@ -393,7 +463,9 @@ mtcars$am <- as.factor(mtcars$am)
 plot_ly(mtcars, x = ~wt, y = ~hp, z = ~qsec, color = ~am, colors = c("red","blue")) %>% add_markers()
 ```
 
-*GRÁFICO24*
+![](img/graficas/grafico24.png)
+
+
 
 * *Gráfico de líneas.* Para el gráfico de líneas, usaremos la misma función pero concatenando la funcion add_lines().
 
@@ -413,7 +485,10 @@ plot_ly(mtcars, x = ~wt, y = ~mpg, z = ~qsec, color = ~am,
         colors = c("blue", "red")) %>% add_lines() %>% add_markers()
 ```
 
-*GRÁFICO25*
+
+![](img/graficas/grafico25.png)
+
+
 
 * *Gráfico de superficie*. Para este tipo de gráfico, volveremos a usar la función /plot_ly/ pero añadiremos la función add_surface(). Un buen dataset para ver este gráfico es /volcano/. Usaremos la función *add_surface()*
 
@@ -421,7 +496,11 @@ plot_ly(mtcars, x = ~wt, y = ~mpg, z = ~qsec, color = ~am,
 plot_ly(z = volcano) %>% add_surface()
 ```
 
-*GRÁFICO26*
+
+
+![](img/graficas/grafico26.png)
+
+
 
 * *Gráfico de barra.* De la misma forma, podemos crear gráficos de barras, concatenando la función *add_bars()*.
 
@@ -429,7 +508,11 @@ plot_ly(z = volcano) %>% add_surface()
 plot_ly(mtcars, x = ~cyl, y = ~mpg, color = ~am, colors = c("blue", "red")) %>% add_bars()
 ```
 
-*GRÁFICO27*
+
+
+![](img/graficas/grafico27.png)
+
+
 
 * *Mapa de calor.* Con la función *add_heatmap()* podemos obtener un mapa de calor.
 
@@ -437,7 +520,10 @@ plot_ly(mtcars, x = ~cyl, y = ~mpg, color = ~am, colors = c("blue", "red")) %>% 
 plot_ly(z = volcano) %>% add_heatmap()
 ```
 
-*GRÁFICO28*
+
+![](img/graficas/grafico28.png)
+
+
 
 * *Histograma.* Podemos crear un histograma con la función *add_histogram()*.
 
